@@ -1,0 +1,16 @@
+application: hcmmh-registration
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /hcmmh/.*
+  script: main.py
+
+- url: /fetchInfo
+  script: main.py
+  login: admin
+  
+- url: /loadPicture
+  script: main.py
+  login: admin

@@ -1,0 +1,10 @@
+cron:
+- description: daily fetch job
+  url: /fetchInfo
+  schedule: every day 00:35
+  timezone: Asia/Taipei
+  
+- description: picture fetch job
+  url: /loadPicture
+  schedule: every 2 minutes 
+  timezone: Asia/Taipei

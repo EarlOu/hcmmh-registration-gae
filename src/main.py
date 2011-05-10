@@ -196,7 +196,7 @@ class Doctor(webapp.RequestHandler):
 
 
 class Register(webapp.RequestHandler):
-    def get(self):
+    def post(self):
         dr_id = self.request.get('doctor','')
         dept_id = self.request.get('dept','')
         time = self.request.get('time','')
@@ -265,7 +265,7 @@ def makeCookieHeader(cookie):
         return cookieHeader
     
 class CancelRegister(webapp.RequestHandler):
-    def get(self):      
+    def post(self):      
         dr_id = self.request.get('doctor','')
         dept_id = self.request.get('dept','')
         time = self.request.get('time','')
